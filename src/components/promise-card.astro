@@ -1,0 +1,10 @@
+---
+import { Icon } from 'astro-icon/components';
+const { iconName, header, content } = Astro.props;
+---
+
+<div class=" h-full p-6 bg-[#f9f9f9] rounded-xl shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl">
+  {iconName && <Icon name={iconName} class="mx-auto" size="48" aria-ignore />}
+  <h3 class="text-2xl font-fry font-semibold mt-6">{header}</h3>
+  <p class="text-gray-600 mt-4">{content}</p>
+</div>

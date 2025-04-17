@@ -1,22 +1,98 @@
+---
+import AOSWrapper from '../components/ui/AOSWrapper.jsx';
+import "../assets/styles/global.css";
+import Footer from '../components/footer.astro';
+import Social from '../components/social.astro';
+import Header from '../components/header.astro';
+import WelcomeMessage from '../components/welcome-message.astro';
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/mckee-favicon.png" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.ronmckeeauctionservice.com">
+ 
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ronmckeeauctionservice.com" />
+<meta property="og:title" content="Ron McKee Auction Service | Auctions, Estates, Liquidations & Appraisals | Terre Haute, IN" />
+<meta property="og:description" content="Ron McKee Auction Service, Inc. specializes in real estate, estate, business liquidation, and personal property auctions, as well as professional appraisals of estates, antiques, and collectibles. Count on us for complete auction services that are always open, honest, and fair." />
+<meta property="og:image" content="https://ronmckeeauctionservice.com/ron-og-image.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="ronmckeeauctionservice.com" />
+<meta property="twitter:title" content="Ron McKee Auction Service | Auctions, Estates, Liquidations & Appraisals | Terre Haute, IN" />
+<meta property="twitter:description" content="Ron McKee Auction Service, Inc. specializes in real estate, estate, business liquidation, and personal property auctions, as well as professional appraisals of estates, antiques, and collectibles. Count on us for complete auction services that are always open, honest, and fair." />
+<meta property="twitter:image" content="https://ronmckeeauctionservice.com\ron-og-image.png" />
+
+<!-- Meta Tags Generated with https://metatags.io -->
+
+    <meta name="description" content="Ron McKee Auction Service, Inc. specializes in real estate, estate, business liquidation, and personal property auctions, as well as professional appraisals of estates, antiques, and collectibles. Count on us for complete auction services that are always open, honest, and fair." />
+    <meta name="keywords" content="estate auctions, 
+    real estate auctions, 
+    Indiana auctioneer, 
+    auction service, 
+    antique appraisals, 
+    business liquidation, 
+    personal property auctions, 
+    Ron McKee Auction Service, 
+    auctioneer Terre Haute, 
+    auction listings
+">
+		<title>Ron McKee Auction Service | Auctions, Estates, Liquidations & Appraisals | Terre Haute, IN </title>
 	</head>
-	<body>
-		<slot />
+
+	<body class="bg-bg-main">
+    <div class="bg-[url('../src/assets/ron-bg.jpg')] bg-cover bg-center bg-no-repeat pt-8 px-0">
+      <div class="md:px-12 lg:px-16 md:pb-12">
+      <Header />
+      <WelcomeMessage />
+    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" class="block w-full" viewBox="0 0 1000 100"><path d="M0 0C500 0 500 96 1000 96V100H0V0Z" fill="#fe5b44"></path></svg>
+    </div>
+
+    <AOSWrapper client:only="react" />
+      <div data-aos="fade-up" class="layout-wrapper px-6 md:px-12 lg:px-16">
+		    <slot />
+      </div>
+
+<script data-goatcounter="https://mckee-auction.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path d="M0 0C500 0 500 96 1000 96V100H0V0Z" fill="#f9f9f9" class="block w-full"></path></svg>
+<div class="w-full bg-[#f9f9f9] -mt-1 pb-12">
+<Social />
+</div>
+      <Footer/>
+        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
 	</body>
 </html>
 
 <style>
-	html,
+	html {
+    background-color: #fe5b44;
+  
+  }
+  
+  html,
 	body {
 		margin: 0;
-		width: 100%;
-		height: 100%;
+    padding: 0;
 	}
+
+  section {
+    overflow: visible;
+  }
+
+  * {
+  box-sizing: border-box;
+}
+
 </style>

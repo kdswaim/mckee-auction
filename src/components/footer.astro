@@ -1,0 +1,118 @@
+<div class="py-12 px-8 lg:px-8 bg-white">
+    <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+      
+      <!-- Logo & Description -->
+      <div class="sm:col-span-2">
+        <a href="/" aria-label="Go home" title="Ron McKee Auction Service - since 2005" class="inline-flex items-center break-normal">
+          <span class="flex text-[#fe5b44] tracking-wide font-bold text-2xl break-normal gap-1">
+            <span class="font-brush">Ron McKee</span>
+            <span class="font-sergio text-gray-800">Auction Service</span>
+          </span>
+        </a>
+        <p class="text-gray-600 font-fry text-lg italic">“Fast talkin’, fair dealin’, McKee style!”</p>
+        <div class="mt-6 lg:max-w-sm">
+          <p class="text-sm text-gray-800">
+            With years of experience and a reputation for honesty and fairness, Ron brings professional integrity to every sale.
+          </p>
+          <p class="mt-4 text-sm text-gray-800">
+            Whether you're auctioning real estate, farm equipment, antiques, or entire estates, Ron’s honest approach and proven track record ensure every client feels confident, informed, and respected.
+          </p>
+          <p class="mt-4 text-sm text-gray-800">
+            As a trusted Indiana auctioneer serving Terre Haute and beyond, Ron also offers antique appraisals and expert guidance for your next auction listing. 
+          </p>
+          <p class="mt-4 text-sm text-gray-800">
+            Contact Ron McKee Auction Service today to make your next auction easier.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Contact Info + Visitor Counter Side by Side on Small Screens -->
+<div class="flex flex-col sm:center sm:flex-row sm:items-start sm:justify-between gap-8 sm:gap-16">
+
+  <!-- Contact Info -->
+  <div class="space-y-2 text-sm">
+    <p class="text-base font-bold tracking-wide text-gray-900 font-fry">Contacts</p>
+    <div class="flex">
+      <p class="mr-1 text-gray-800">Phone:</p>
+      <a href="tel:850-123-5021">812-229-0711</a>
+    </div>
+    <div class="flex">
+      <p class="mr-1 text-gray-800">Email:</p>
+      <a href="mailto:info@lorem.mail">rkee40@aol.com</a>
+    </div>
+    <div class="flex">
+      <p class="mr-1 text-gray-800">Address:</p>
+      <a href="https://www.google.com/maps/place/Ron+McKee+Auctions+%26+Estate/@39.3908156,-87.2922618..." target="_blank" rel="noopener noreferrer">
+        8290 S SR 46
+      </a>
+    </div>
+  </div>
+
+  <!-- Visitor Counter -->
+  <div class="pt-4 sm:pt-0 w-40 h-20 text-center font-brush shrink-0">
+    You're Guest Number:
+    <div id="visitor-count"></div>
+    <script>
+      var t = setInterval(function () {
+        if (window.goatcounter && window.goatcounter.visit_count) {
+          clearInterval(t);
+          window.goatcounter.visit_count({
+            append: '#visitor-count',
+            no_branding: true,
+            style: `
+              div {
+                border: none;
+                background: #f9f9f9;
+              }
+              #gcvc-for, #gcvc-by {
+                display: none;
+              }
+              #gcvc-border {
+                stroke: none;
+                fill: none;
+              }
+              #gcvc {
+                padding: 0 !important;
+                margin: 0 !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+                height: auto;
+                background: none;
+                border: none;
+                box-shadow: none;
+              }
+              #gcvc-views {
+                font-size: 1rem;
+                font-weight: 600;
+                line-height: 1;
+                padding: 0 !important;
+                margin: 0 !important;
+                display: inline !important;
+                background: none;
+                color: #000;
+              }
+            `
+          });
+        }
+      }, 100);
+    </script>
+  </div>
+</div>
+</div>
+  
+    <div class="flex flex-col-reverse justify-between pt-5 pb-5">
+      <p class="text-sm text-gray-600 text-center font-fry font-xl">
+        © <span id="year"></span> Ron McKee Auction Service, All rights reserved.
+      </p>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </div>
+
+    <p class="text-gray-600 flex items-start justify-center font-fry">
+        Website by <img class="px-2 h-5 inline-block" alt="Monarch Media LLC" src="https://i.postimg.cc/yxKgn2TG/Monarch-inline-col.png">
+      </p>
+  </div>
+  

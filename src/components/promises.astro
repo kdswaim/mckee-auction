@@ -1,0 +1,25 @@
+---
+import PromiseCard from "./promise-card.astro"
+---
+
+<section title="Our Services" class="mt-[-3px] py-8 text-center bg-[#fe5b44] z-0 w-full ">
+    <h2 class="text-white font-sergio text-shadow-sm">Our Services</h2>
+        <p class="font-fry text-xl">We can assist you in more ways than one. Find out below how we can help you today!</p>
+            <div class="pt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <PromiseCard 
+                    iconName="auctions" 
+                    header="Complete Auction Service" 
+                    content="We offer Auctions on Real Estate, Estates, Business Liquidations, Personal Property, and more."
+                    />
+                    <PromiseCard 
+                    iconName="appraisals" 
+                    header="Estate Appraisals" 
+                    content="Whether it is an estate, personal property, or antiques we can appraise it. We will always be open, honest, and fair."
+                    />
+                    <PromiseCard 
+                    iconName="realestate" 
+                    header="Real Estate Sales" 
+                    content="Having trouble with a Real Estate sale? No worries for us, it falls under our auctioneer expertise."
+                    />
+            </div>
+</section>
