@@ -1,18 +1,26 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import markdoc from '@astrojs/markdoc';
-import keystatic from '@keystatic/astro';
 import icons from 'astro-icon';
-
+import netlify from '@astrojs/netlify';
 import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  vite: {
-      plugins: [tailwindcss()],
+
+  output: 'server',
+  adapter: netlify(),
+  experimental: {
+    session: true
   },
 
-  integrations: [markdoc(), keystatic(), icons({
-      local:"src/icons",
-  }), react()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
+
+  integrations: [
+    markdoc(),
+    icons({ local: 'src/icons' }),
+    react(),
+  ],
 });
