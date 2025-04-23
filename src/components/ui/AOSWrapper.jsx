@@ -8,6 +8,7 @@ export default function AOSWrapper() {
     AOS.init({
       duration: 800,
       once: true,
+      offset: 100,
       // Add any other config options here
     });
   }, []);
