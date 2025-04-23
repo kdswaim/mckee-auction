@@ -4,6 +4,8 @@ import markdoc from '@astrojs/markdoc';
 import icons from 'astro-icon';
 import netlify from '@astrojs/netlify';
 import react from '@astrojs/react';
+import keystatic from '@keystatic/astro';
+// import content from '@astrojs/content';
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,6 +17,11 @@ export default defineConfig({
   },
 
   vite: {
+    resolve: {
+      alias: {
+        'keystatic:posts' : '/src/keystatic/posts.ts'
+      },
+    },
     plugins: [tailwindcss()],
   },
 
@@ -22,5 +29,8 @@ export default defineConfig({
     markdoc(),
     icons({ local: 'src/icons' }),
     react(),
+    markdoc(),
+    keystatic(),
+    // content(),
   ],
 });

@@ -1,0 +1,31 @@
+// keystatic.config.ts
+import { config, fields, collection } from '@keystatic/core';
+
+export default config({
+  ui: {
+    brand: { name: 'Ron Mckee Auction Service',
+    },
+  },
+  storage: {
+    kind: 'local',
+  },
+  collections: {
+    posts: collection({
+      label: 'Auctions',
+      slugField: 'title',
+      path: 'src/content/posts/*',
+      format: { contentField: 'content' },
+      schema: {
+        title: fields.slug({ name: { label: 'Title' } }),
+        date: fields.date({ label: 'Auction Date' }),
+        time: fields.text({
+            label: 'Auction Time',
+          }),
+        location: fields.text({ label: 'Location' }),
+        image: fields.url({ label: 'Image URL', description: '(Optional) Upload your image to [PostImages](https://postimages.org). Then paste the DIRECT LINK address on Postimages for the picture HERE.' }),
+        link: fields.url({ label: 'Link to full details', description: 'Optional link' }),
+        content: fields.markdoc({ label: 'Content' }),
+      },
+    }),
+  },
+});
