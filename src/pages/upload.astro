@@ -1,0 +1,61 @@
+---
+import "../assets/styles/global.css";
+---
+
+  <section class="min-h-screen bg-gray-100 py-10 px-4 text-center">
+    <h1 class="text-3xl font-bold mb-6">Upload Auction Photos</h1>
+    <h2 class="text-2xl">Hi, Ron! Welcome to your picture upload portal.</h2>
+    <p class="mb-4 text-gray-700 ">
+      <ol class="text-xl">
+        <li>1. Use the <strong>uploader</strong> below.</li>
+        <li>2. After uploading, <strong>copy the image URL</strong> and <strong>paste it into your auction post</strong>.</li>
+        <li>3. You're extra handsome today!</li>
+    </ol>
+    <br/>
+      
+    </p>
+<div class="pt-4 pb-8">
+    <button
+    id="upload_button"
+    class="bg-[#fe5b44] text-white font-semibold py-2 px-4 rounded shadow hover:bg-blue-700 transition mb-4"
+  >
+    Upload Images
+  </button>
+  <p class="text-slate-700">(may take it a second to pop up)</p>
+</div>
+    <div id="uploadResult" class="text-sm mt-4 text-green-700"></div>
+
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function () {
+    const uploadButton = document.getElementById('upload_button');
+
+    if (uploadButton) {
+      uploadButton.addEventListener('click', function () {
+        cloudinary.openUploadWidget({
+          cloudName: 'du5lutjm9',
+          uploadPreset: 'ml_default',
+          sources: ['local', 'url', 'camera'],
+          multiple: false,
+          folder: 'auctions',
+          cropping: false,
+          maxFileSize: 5000000, // 5MB
+        }, (error, result) => {
+          if (!error && result && result.event === "success") {
+            document.getElementById('uploadResult').innerHTML =
+              'Upload successful!<br><strong><Image URL:</strong> <code>' +
+              result.info.secure_url +
+              '</code>';
+          } else if (error) {
+            console.error("Upload error:", error);
+          }
+        });
+      });
+    }
+  });
+</script>
+<div class="flex flex-col items-center gap-4 justify-center">
+    <a href="/keystatic" class="text-2xl font-fry text-[#fe5b44] hover:text-white hover:border-white text-center" title="Takes You Back to Auction Portal"><p class="rounded-2xl border-5 bg-white shadow-xl hover:bg-[#fe5b44] font-semibold w-60">Go back to the post!</p></a>
+  <p>Need help for technical issues? Contact <a href="email:kristen.southardhomesllc@gmail.com"><span class="text-red-600">Kristen Swaim.</span></a></p>
+</section>
+</div>

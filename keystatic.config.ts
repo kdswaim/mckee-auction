@@ -22,7 +22,7 @@ export default config({
             label: 'Auction Time',
           }),
         location: fields.text({ label: 'Location' }),
-        image: fields.url({ label: 'Image URL', description: '(Optional) Upload your image to [PostImages](https://postimages.org). Then paste the DIRECT LINK address on Postimages for the picture HERE.' }),
+        image: fields.url({ label: 'Image URL', description: '(Optional) Upload your images to your portal (http://www.ronmckeeauctionservice.com/upload) and then paste the URL!' }),
         link: fields.url({ label: 'Link to full details', description: 'Optional link' }),
         content: fields.markdoc({ label: 'Content' }),
       },
