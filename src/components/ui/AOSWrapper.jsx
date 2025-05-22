@@ -8,9 +8,8 @@ export default function AOSWrapper() {
     AOS.init({
       duration: 800,
       once: true,
-      offset: 100,
-      // Add any other config options here
-    });
+      offset: window.innerWidth < 600 ? 30 : 100,
+});
   }, []);
 
   return null; // no markup needed
