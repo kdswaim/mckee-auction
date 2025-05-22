@@ -1,13 +1,18 @@
 // keystatic.config.ts
 import { config, fields, collection } from '@keystatic/core';
 
+
 export default config({
   ui: {
     brand: { name: 'Ron Mckee Auction Service',
     },
   },
   storage: {
-    kind: 'local',
+    kind: 'github',
+    repo: {
+      owner: 'kdswaim',
+      name: 'mckee-auction'
+    }
   },
   collections: {
     posts: collection({
