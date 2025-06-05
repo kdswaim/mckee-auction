@@ -3,20 +3,13 @@ import { Icon } from 'astro-icon/components';
 import Auctionwidget from './auctionwidget.astro';
 ---
 
-<section title="Upcoming Auctions" class="py-6 px-4 text-center w-full flex justify-center gap-4 flex-col">
-    <h2 class=" flex items-center justify-center gap-2 md:gap-4 whitespace-nowrap font-semibold">
-        <Icon name="chunky-arrow" class="contrast-200 w-10 h-10 sm:w-14 sm:h-14 md:w-[150px] md:h-[150px] shrink-0" />
+<section title="Upcoming Auctions" class="py-6 px-4 text-center w-full flex justify-center gap-4 flex-col pb-16">
+    <h2 aria-label="Upcoming Auctions" class="flex items-center justify-center gap-2 md:gap-4 whitespace-nowrap font-semibold">
+        <Icon name="chunky-arrow" class="contrast-200 w-10 h-10 sm:w-14 sm:h-14 md:w-[150px] md:h-[150px] shrink-0 drop-shadow-md" />
         Upcoming Auctions
-        <Icon name="chunky-arrow" class="contrast-200 rotate-[65deg] w-10 h-10 sm:w-14 sm:h-14 md:w-[150px] md:h-[150px] shrink-0" />
+        <Icon name="chunky-arrow" class="contrast-200 rotate-[65deg] w-10 h-10 sm:w-14 sm:h-14 md:w-[150px] md:h-[150px] shrink-0 drop-shadow-md" />
       </h2>
       <div id="auction-widgets" class="flex flex-col items-center justify-center gap-4 mx-auto">
         <Auctionwidget />
-<script type="text/javascript">
-    // <![CDATA[
-    var az_feed_uid=21977;
-    var az_feed=129;
-    // ]]>
-    </script>
-    <script src="//www.auctionzip.com/includes/xmlfeed.js" type="text/javascript"></script>
 </div>
 </section>

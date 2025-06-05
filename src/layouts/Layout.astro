@@ -49,16 +49,16 @@ import WelcomeMessage from '../components/welcome-message.astro';
 	</head>
 
 	<body class="bg-bg-main">
-    <div class="bg-[url('/ron-bg.jpg')] bg-cover bg-center bg-no-repeat pt-8 px-0">
+    <div id="#background" class="bg-[url('/ron-bg.png')] bg-cover bg-bottom bg-no-repeat pt-8 px-0 position-bottom">
       <div class="md:px-12 lg:px-16 md:pb-12">
       <Header />
       <WelcomeMessage />
     </div>
-      <svg xmlns="http://www.w3.org/2000/svg" class="block w-full" viewBox="0 0 1000 100"><path d="M0 0C500 0 500 96 1000 96V100H0V0Z" fill="#fe5b44"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="z-90 w-full" viewBox="0 0 1000 100"><path d="M0 0C500 0 500 96 1000 96V100H0V0Z" fill="#fe5b44"></path></svg>
     </div>
 
     <AOSWrapper client:only="react" />
-      <div data-aos="fade-up" class="layout-wrapper px-6 md:px-12 lg:px-16">
+      <div data-aos="fade-up">
 		    <slot />
       </div>
 
@@ -91,5 +91,4 @@ import WelcomeMessage from '../components/welcome-message.astro';
   * {
   box-sizing: border-box;
 }
-
 </style>
