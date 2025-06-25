@@ -5,6 +5,7 @@ import icons from 'astro-icon';
 import netlify from '@astrojs/netlify';
 import react from '@astrojs/react';
 import keystatic from '@keystatic/astro';
+import partytown from '@astrojs/partytown';
 // import content from '@astrojs/content';
 
 // https://astro.build/config
@@ -30,7 +31,8 @@ export default defineConfig({
     icons({ local: 'src/icons' }),
     react(),
     markdoc(),
-    keystatic(),
     // content(),
+    keystatic(),
+    partytown(),
   ],
 });

@@ -29,27 +29,30 @@
     </div>
 
     <div>
-      <label class="block text-sm font-medium mb-1" for="phone">Phone Number</label>
+      <label for="phone" class="block text-sm font-medium mb-1">
+        Phone Number</label>
       <input 
         required 
         type="tel" 
         id="phone" 
         name="phone" 
-        pattern="[0-9]{10}" 
+        inputmode="tel"
         placeholder="1234567890"
         class="w-full border rounded-md p-2"
       />
     </div>
 
-    <div class="py-2 font-fry">
-      <label class="block text-lg font-medium mb-1" for="message">What are you selling?</label>
-      <textarea 
-        id="message"
-        name="message"
-        placeholder="Optional: What are you selling?" 
-        class="text-lg p-2 w-full"
-      ></textarea>
-    </div>
+ <div class="py-2">
+  <label for="message" class="block text-sm font-medium mb-1">
+    What are you selling?
+  </label>
+  <textarea 
+    id="message"
+    name="message"
+    placeholder="Optional: What are you selling?" 
+    class="text-lg p-2 w-full"
+  ></textarea>
+</div>
 
     <div class="flex justify-center">
       <button 
