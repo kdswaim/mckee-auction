@@ -23,7 +23,7 @@ const formatDate = (iso: string) => {
 }`}>
   {posts.map((post) => (
     <article id="auctions" class="rounded-xl border-5 bg-white p-4 shadow-md w-full max-w-md text-center">
-      <h3 class="text-xl font-semibold mb-2">{post.data.title}</h3>
+      <h3 title="Title or Type of Auction" class="text-xl font-semibold mb-2">{post.data.title}</h3>
       {post.data.image && (
         <img
           src={post.data.image}
@@ -41,6 +41,7 @@ const formatDate = (iso: string) => {
           href={post.data.link}
           target="_blank"
           rel="noopener noreferrer"
+          title="View Auctionzip Listing"
           class="inline-block mt-2 text-blue-700 hover:underline font-medium"
         >
           View on AuctionZip
