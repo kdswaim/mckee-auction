@@ -14,26 +14,21 @@ import WelcomeMessage from '../components/welcome-message.astro';
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/mckee-favicon.webp" />
 		<meta name="generator" content={Astro.generator} />
-    <!-- SEO -->
     <link rel="canonical" href="https://www.ronmckeeauctionservice.com">
  
-<!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ronmckeeauctionservice.com" />
 <meta property="og:title" content="Ron McKee Auction Service | Auctions, Estates, Liquidations & Appraisals | Terre Haute, IN" />
 <meta property="og:description" content="Ron McKee Auction Service, Inc. specializes in real estate, estate, business liquidation, and personal property auctions, as well as professional appraisals of estates, antiques, and collectibles. Count on us for complete auction services that are always open, honest, and fair." />
 <meta property="og:image" content="https://ronmckeeauctionservice.com/ron-og-image.png" />
 
-<!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="ronmckeeauctionservice.com" />
 <meta property="twitter:title" content="Ron McKee Auction Service | Auctions, Estates, Liquidations & Appraisals | Terre Haute, IN" />
 <meta property="twitter:description" content="Ron McKee Auction Service, Inc. specializes in real estate, estate, business liquidation, and personal property auctions, as well as professional appraisals of estates, antiques, and collectibles. Count on us for complete auction services that are always open, honest, and fair." />
 <meta property="twitter:image" content="https://ronmckeeauctionservice.com\ron-og-image.png" />
 
-<!-- Meta Tags Generated with https://metatags.io -->
-
-    <meta name="description" content="Ron McKee Auction Service, Inc. specializes in real estate, estate, business liquidation, and personal property auctions, as well as professional appraisals of estates, antiques, and collectibles. Count on us for complete auction services that are always open, honest, and fair." />
+ <meta name="description" content="Ron McKee Auction Service, Inc. specializes in real estate, estate, business liquidation, and personal property auctions, as well as professional appraisals of estates, antiques, and collectibles. Count on us for complete auction services that are always open, honest, and fair." />
     <meta name="keywords" content="estate auctions, 
     real estate auctions, 
     Indiana auctioneer, 
@@ -64,29 +59,34 @@ import WelcomeMessage from '../components/welcome-message.astro';
         </style>
 
 		<title>Ron McKee Auction Service | Auctions, Estates, Liquidations & Appraisals | Terre Haute, IN </title>
-	</head>
+	<link rel="preload" as="image" href="/ron-bg.webp" type="image/webp" />
+</head>
 
 	<body class="bg-bg-main">
-    <div id="#background" class="bg-[url('/ron-bg.webp')] bg-cover bg-bottom bg-no-repeat pt-8 px-0 position-bottom">
-      <div class="md:px-12 lg:px-16 md:pb-12">
-      <Header />
-      <WelcomeMessage />
-    </div>
-      <svg xmlns="http://www.w3.org/2000/svg" class="z-90 w-full" viewBox="0 0 1000 100"><path d="M0 0C500 0 500 96 1000 96V100H0V0Z" fill="#fe5b44"></path></svg>
-    </div>
+    <!-- Hero Section with background and fallback image -->
+<section class="relative bg-cover bg-bottom bg-no-repeat bg-[url('/ron-bg.webp')] pt-8 px-0 z-0">
+  <!-- Visually hidden fallback image for better rendering and SEO -->
+  <img
+    src="/ron-bg.webp"
+    alt="Auctioneer Ron McKee"
+    width="1920"
+    height="1080"
+    class="sr-only"
+    loading="eager"
+    fetchpriority="high"
+  />
 
-    <AOSWrapper client:only="react" />
-      <div data-aos="fade-up">
-		    <slot />
-      </div>
+  <!-- Foreground content -->
+  <div class="md:px-12 lg:px-16 md:pb-12 relative z-10">
+    <Header />
+    <WelcomeMessage />
+  </div>
 
-<script data-goatcounter="https://mckee-auction.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path d="M0 0C500 0 500 96 1000 96V100H0V0Z" fill="#f9f9f9" class="block w-full"></path></svg>
-<div class="w-full bg-[#f9f9f9] -mt-1 pb-12">
-<Social />
-</div>
+  <!-- Wave overlapping bottom of this section -->
+  <svg class="absolute bottom-0 left-0 w-full z-20" viewBox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0C500 0 500 96 1000 96V100H0V0Z" fill="#fe5b44" />
+  </svg>
+</section>
       <Footer/>
         <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
