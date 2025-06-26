@@ -1,18 +1,19 @@
 ---
-import Logo from '../assets/RonMckeeASlogo.webp';
 import PrimaryButton from '../components/ui/primary-button.astro';
 import SecondaryButton from '../components/ui/secondary-button.astro';
 ---
 
 <div id="container"></div>
 	<header title="Welcome" class="text-center text-white text-shadow-md p-8">
-		<img src={Logo.src} 
-		width="300" 
-		height="300" 
-		alt="Ron McKee Auction Service Logo"
-		class="drop-shadow-md mx-auto"
-		loading="eager" 
-		fetchpriority="high"/>
+		<img 
+  src="/RonMckeeASlogo.webp" 
+  width="300" 
+  height="300" 
+  alt="Ron McKee Auction Service Logo" 
+  class="drop-shadow-md mx-auto" 
+  loading="eager" 
+  fetchpriority="high" 
+/>
 		<h1 title="Welcome">Ron McKee Auction Service</h1>
 		<p class="font-fry">License#: AU10400108</p>
 		<p class="font-fry text-2xl text-shadow">812-229-0711</p>
