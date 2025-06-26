@@ -16,31 +16,30 @@
     .font-fry {
       font-family: 'Fry Baskerville', serif;
     } 
-
   }
 
 @font-face {
-    font-family: 'Sergio Trendy';
-    src: url('/src/assets/fonts/Sergio Trendy.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Brush Script';
+  src: url('/fonts/BrushScript.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Brush Script';
-    src: url('/src/assets/fonts/Brush Script Regular.ttf');  
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Fry Baskerville';
+  src: url('/fonts/Frybaskin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Fry Baskerville';
-    src: url('/src/assets/fonts/FRYBASKN.TTF'); 
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Sergio Trendy';
+  src: url('/fonts/SergioTrendy.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @layer base {
@@ -73,13 +72,6 @@
     }
   }
 
-  @layer components {
-    .bg-newspaper {
-      background-image: url('/newspaper-bg.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-}
   
 
 /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
