@@ -14,7 +14,7 @@ const formatDate = (iso: string) => {
 };
 ---
 
-<div class={`grid gap-6 mt-8 place-items-center ${
+<section class={`grid gap-6 mt-8 place-items-center ${
   posts.length === 1
     ? 'grid-cols-1'
     : posts.length === 2
@@ -23,16 +23,15 @@ const formatDate = (iso: string) => {
 }`}>
   {posts.map((post) => (
     <article id="auctions" class="rounded-xl border-5 bg-white p-4 shadow-md w-full max-w-md text-center">
-      <h3 title="Title or Type of Auction" class="text-xl font-semibold mb-2">{post.data.title}</h3>
+      <h3 class="text-xl font-semibold mb-2">
+        {post.data.title}</h3>
       {post.data.image && (
         <img
           src={post.data.image}
           alt={post.data.title}
-          class="max-h-48 h-full w-full object-cover rounded-md mb-4"
+          class="h-48 w-full object-cover rounded-md mb-4"
         />
-      )}Real Estate Auction
-<img src="https://res.cloudinary.com/du5lutjm9/image/upload/v1749578854/auctions/DSC…" alt="Real Estate Auction" class="h-48 w-full object-cover rounded-md mb-4">
-
+      )}
       <p class="text-sm text-gray-700 mb-2">
         {formatDate(post.data.date)} &middot; {post.data.time} &middot; {post.data.location}
       </p>
