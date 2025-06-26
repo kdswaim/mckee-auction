@@ -59,34 +59,35 @@ import WelcomeMessage from '../components/welcome-message.astro';
         </style>
 
 		<title>Ron McKee Auction Service | Auctions, Estates, Liquidations & Appraisals | Terre Haute, IN </title>
-	<link rel="preload" as="image" href="/ron-bg.webp" type="image/webp" />
+<link rel="preload" as="image" href="/ron-bg.webp" type="image/webp" imagesrcset="/ron-bg.webp" fetchpriority="high" />
+<link rel="preload" as="image" href="/assets/RonMckeeASlogo.webp" type="image/webp" fetchpriority="high" />
+<link rel="preload" href="/fonts/BrushScript.ttf" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/Frybaskin.ttf" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/SergioTrendy.ttf" as="font" type="font/woff2" crossorigin />
+<link rel="preconnect" href="https://connect.facebook.net" crossorigin />
 </head>
 
 	<body class="bg-bg-main">
-    <!-- Hero Section with background and fallback image -->
-<section class="relative bg-cover bg-bottom bg-no-repeat bg-[url('/ron-bg.webp')] pt-8 px-0 z-0">
-  <!-- Visually hidden fallback image for better rendering and SEO -->
-  <img
-    src="/ron-bg.webp"
-    alt="Auctioneer Ron McKee"
-    width="1920"
-    height="1080"
-    class="sr-only"
-    loading="eager"
-    fetchpriority="high"
-  />
+    <div id="#background" class="bg-[url('/ron-bg.webp')] bg-cover bg-bottom bg-no-repeat pt-8 px-0 position-bottom">
+      <div class="md:px-12 lg:px-16 md:pb-12">
+      <Header />
+      <WelcomeMessage />
+    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" class="z-90 w-full" viewBox="0 0 1000 100"><path d="M0 0C500 0 500 96 1000 96V100H0V0Z" fill="#fe5b44"></path></svg>
+    </div>
 
-  <!-- Foreground content -->
-  <div class="md:px-12 lg:px-16 md:pb-12 relative z-10">
-    <Header />
-    <WelcomeMessage />
-  </div>
+    <AOSWrapper client:only="react" />
+      <div data-aos="fade-up">
+		    <slot />
+      </div>
 
-  <!-- Wave overlapping bottom of this section -->
-  <svg class="absolute bottom-0 left-0 w-full z-20" viewBox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0C500 0 500 96 1000 96V100H0V0Z" fill="#fe5b44" />
-  </svg>
-</section>
+<script data-goatcounter="https://mckee-auction.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path d="M0 0C500 0 500 96 1000 96V100H0V0Z" fill="#f9f9f9" class="block w-full"></path></svg>
+<div class="w-full bg-[#f9f9f9] -mt-1 pb-12">
+<Social />
+</div>
       <Footer/>
         <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
