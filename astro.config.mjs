@@ -14,7 +14,6 @@ export default defineConfig({
   output: 'server',
   adapter: netlify(),
   experimental: {
-    session: true
   },
 
   vite: {

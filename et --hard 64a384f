@@ -1,0 +1,60 @@
+[33m64a384f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m switch keystatic to token authentication
+[33mfdb7cd2[m Update src/content/posts/antique-car-and-estate-auction
+[33m678f8a8[m Delete src/content/posts/antique-car-and-e-state-auction
+[33m92994da[m Delete src/content/posts/huge-antique-and-collectible-auction-day-3
+[33m11b17c7[m Delete src/content/posts/huge-antique-and-collectible-auction-day-2
+[33m74c0d1a[m Delete src/content/posts/huge-antique-and-collectible-auction
+[33m8727bf4[m Update src/content/posts/antique-car-and-estate-auction
+[33m2dc31e3[m Update src/content/posts/antique-car-and-e-state-auction
+[33m9abe23b[m Update src/content/posts/real-estate-and-personal-property-auction
+[33mf526457[m Update src/content/posts/huge-antique-and-collectible-auction
+[33m7e6140d[m Update src/content/posts/huge-antique-and-collectible-auction-day-3
+[33m88fb5ec[m Update src/content/posts/huge-antique-and-collectible-auction-day-2
+[33m1646be6[m Update src/content/posts/huge-antique-and-collectible-auction-day-3
+[33m88ab9ef[m Update src/content/posts/huge-antique-and-collectible-auction-day-2
+[33m4b23269[m Update src/content/posts/huge-antique-and-collectible-auction-day-3
+[33m5589e6b[m Update src/content/posts/huge-antique-and-collectible-auction-copy-day-3
+[33m8b097c1[m Update src/content/posts/huge-antique-and-collectible-auction-day-2
+[33mfe14916[m Update src/content/posts/huge-antique-and-collectible-auction-copy-copy
+[33me8d8567[m Update src/content/posts/huge-antique-and-collectible-auction-copy
+[33m731abab[m Update src/content/posts/huge-antique-and-collectible-auction-copy-copy
+[33mdfd1816[m Update src/content/posts/huge-antique-and-collectible-auction-copy
+[33mf1b0a24[m Update src/content/posts/huge-antique-and-collectible-auction
+[33mda114a3[m Update src/content/posts/huge-antique-and-collectible-auction
+[33m9082908[m Update src/content/posts/huge-antique-and-collectible-auction-copy-copy
+[33mcce615d[m Update src/content/posts/huge-antique-and-collectible-auction-copy
+[33m4d81e8f[m Update src/content/posts/huge-antique-and-collectible-auction
+[33me558f22[m Delete src/content/posts/real-estate-auction
+[33mf22c334[m fixed preloads and LCP
+[33m9aff36f[m converted fonts to woff2 and moved to public
+[33m35929f4[m fix missing sections between header and footer
+[33m1b18a11[m squoooshed webp images
+[33md8358ab[m added fallback img for lcp calculations
+[33m7384a57[m converted all images to webp
+[33meed3cdd[m added fade-in on load
+[33mc0834b0[m reverted keystatic config from bad changes
+[33m8aa11f6[m fixed keystatic error resulting from accidental changes to auctionwidget
+[33m9e5e895[m properly sized img in auctionwidget
+[33m18876bc[m added lazy loading, titles, and other enhancements to site
+[33m7ed97e7[m Merge branch 'main' of https://github.com/kdswaim/mckee-auction
+[33mac028fd[m updated website to improve lighthouse scores
+[33me09b024[m Delete src/content/posts/estate-auction
+[33m752d561[m Update src/content/posts/real-estate-auction
+[33mb59b2f4[m Update src/content/posts/real-estate-auction
+[33m2070ee2[m Update src/content/posts/estate-auction
+[33m8aecdfb[m Delete src/content/posts/good-things-come-in-threes
+[33m659c910[m Delete src/content/posts/beautiful-test-for-sale
+[33m7b1b8d1[m Delete src/content/posts/another-one
+[33m9807842[m fixed some layout problems, spacing, and addressed accessibility issues
+[33mc38a9c9[m switched keystatic to github mode, redeploying
+[33m6294d35[m fixed AOS trigger for smaller devices, removed unneeded code on layout
+[33mc515531[m fixed extra red to left on sizes 400px and under
+[33m21403fa[m added links to contact info in footer and got the seller form up and running!
+[33mafff29e[m added netlify form detection
+[33m39e1450[m created robots.txt
+[33mf19f2e3[m removed unused logos and moved background to public folder
+[33m325742f[m[33m ([m[1;32mauctionwidget[m[33m)[m added photo upload portal with cloudinary widget
+[33m428273d[m added keystatic for auction info for cms
+[33m90eafdb[m added adapter and removed keystatic
+[33m075afbe[m sorry for the megacommit - this is the first final version of the website. Yay!
+[33m3e59345[m initial commit

@@ -12,7 +12,8 @@ export default config({
     repo: {
       owner: 'kdswaim',
       name: 'mckee-auction'
-    }
+    },
+    
   },
   collections: {
     posts: collection({
